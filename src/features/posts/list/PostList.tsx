@@ -1,19 +1,15 @@
-import React from "react";
-
+import React from 'react';
 import { useGetPostsQuery } from '@/store/api';
-import { Grid, Typography, CircularProgress } from "@mui/material";
-import PostCard from "@/components/post/PostCard";
-import PostListHeader from "./PostListHeader";
+import PostListHeader from './PostListHeader';
+import { Grid } from '@mui/material';
+import PostCard from '@/components/post/PostCard';
 
-const PostList = () => {
-    const { data: posts, isLoading, error } = useGetPostsQuery();
-
-    if (isLoading) return <CircularProgress />;
-    if (error) return <Typography color="error">Error loading posts</Typography>;
+const PostsList = ({ initialData }: { initialData: any[] }) => {
+    const { data: posts = initialData } = useGetPostsQuery();
 
     return (
         <div>
-            <PostListHeader/>
+            <PostListHeader />
             <Grid container spacing={2}>
                 {posts?.map((post) => (
                     <Grid item xs={12} sm={6} md={6} key={post.id}>
@@ -25,4 +21,4 @@ const PostList = () => {
     );
 };
 
-export default PostList;
+export default PostsList;

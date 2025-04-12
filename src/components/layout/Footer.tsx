@@ -22,7 +22,7 @@ const Footer = () => {
           align="center"
           sx={{ color: theme.palette.text.secondary }}
         >
-          © {new Date().getFullYear()} My Blog Dashboard. All rights reserved.
+          © {new Date().getFullYear()} Dashboard. All rights reserved.
         </Typography>
       </Container>
     </Box>

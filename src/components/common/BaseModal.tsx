@@ -11,7 +11,7 @@ type BaseModalProps = {
 
 const BaseModal: React.FC<BaseModalProps> = ({ open, onClose, title, children }) => {
     return (
-        <Dialog open={open} onClose={onClose} fullWidth maxWidth="sm">
+        <Dialog open={open} onClose={onClose} fullWidth maxWidth="md">
             {title && (
                 <DialogTitle
                     sx={{

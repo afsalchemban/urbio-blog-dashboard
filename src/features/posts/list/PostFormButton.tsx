@@ -15,7 +15,7 @@ const PostFromButton = () => {
             await addPost(data).unwrap();  // unwrap() is used to handle success/failure properly
             setOpen(false);
         } catch (err) {
-            console.error('Failed to submit post:', err);
+
         }
     };
 
