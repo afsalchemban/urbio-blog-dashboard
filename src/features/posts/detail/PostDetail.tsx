@@ -1,8 +1,10 @@
 import { useRouter } from 'next/router';
-import { useGetPostQuery } from '../../store/api';
+import { useGetPostQuery } from '../../../store/api';
 import { Card, CardContent, Typography, CircularProgress, Box } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import PostDetailBreadcrumb from './PostDetailBreadcrumb';
+import LoadingSpinner from '@/components/common/LoadingSpinner';
+import ErrorMessage from '@/components/common/ErrorMessage';
 
 const PostDetail = () => {
   const router = useRouter();
@@ -11,8 +13,8 @@ const PostDetail = () => {
 
   const theme = useTheme();
 
-  if (isLoading) return <CircularProgress />;
-  if (error || !post) return <Typography color="error">Post not found.</Typography>;
+  if (isLoading) return <LoadingSpinner />;
+  if (error || !post) return <ErrorMessage message="Post not found." /> ;
 
   return (
     <Box sx={{ width: '100%', padding: 2 }}>

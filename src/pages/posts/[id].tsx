@@ -1,6 +1,6 @@
 // /pages/index.tsx
 import Layout from '@/components/layout/Layout';
-import PostDetail from '@/features/posts/PostDetail';
+import PostDetail from '@/features/posts/detail/PostDetail';
 
 const DetailPage = () => {
 

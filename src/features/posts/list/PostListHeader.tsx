@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Box } from "@mui/material";
-import PostFormButton from "./PostFormButton";
+import PostFormButton from "../list/PostFormButton";
 
 const PostListHeader = () => {
 
