@@ -4,13 +4,12 @@ import BaseButton from "@/components/common/BaseButton";
 import BaseModal from '@/components/common/BaseModal';
 import PostForm from '@/components/post/PostForm';
 import { useRouter } from 'next/router';
+import ErrorMessage from '@/components/common/ErrorMessage';
 
 const PostFromButton = () => {
 
     const [open, setOpen] = useState(false);
     const [addPost, { isLoading, error }] = useAddPostMutation();
-    const router = useRouter();
-
 
     const handlePostSubmit = async (data: any) => {
         try {
@@ -27,6 +26,7 @@ const PostFromButton = () => {
             <BaseModal open={open} onClose={() => setOpen(false)} title="Add New Post">
                 <PostForm onSubmit={handlePostSubmit} isLoading={isLoading} />
             </BaseModal>
+            {error && <ErrorMessage message="Error creating post" />}
         </>
     );
 };

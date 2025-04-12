@@ -1,6 +1,5 @@
 import { Box, Card, CardContent, TextField, Typography } from "@mui/material";
 import { useForm, Controller } from "react-hook-form";
-import BaseButton from "../common/BaseButton";
 import ButtonWithLoading from "../common/ButtonWithLoading";
 
 type PostFormData = {
