@@ -45,7 +45,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
                                 padding: 0
                             }}
                         >
-              Read more >>
+              Read more &gt;&gt;
                         </Button>
                     </Link>
                 </Box>
