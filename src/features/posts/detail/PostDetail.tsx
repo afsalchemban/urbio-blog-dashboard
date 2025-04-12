@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { useGetPostQuery } from '../../../store/api';
-import { Card, CardContent, Typography, CircularProgress, Box } from '@mui/material';
+import { Card, CardContent, Typography, Box } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import PostDetailBreadcrumb from './PostDetailBreadcrumb';
 import LoadingSpinner from '@/components/common/LoadingSpinner';

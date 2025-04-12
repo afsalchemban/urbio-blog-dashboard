@@ -12,10 +12,10 @@ const PostFromButton = () => {
 
     const handlePostSubmit = async (data: Post) => {
         try {
-            await addPost(data).unwrap();  // unwrap() is used to handle success/failure properly
+            await addPost(data).unwrap(); 
             setOpen(false);
         } catch (err) {
-
+            console.error('Failed to submit post:', err);
         }
     };
 
