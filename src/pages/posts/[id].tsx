@@ -1,12 +1,13 @@
 // /pages/index.tsx
 import Layout from '@/components/layout/Layout';
+import PostDetail from '@/features/posts/PostDetail';
 import PostList from "@/features/posts/PostList";
 
 const Home = () => {
 
   return (
     <Layout>
-      <PostList/>
+      <PostDetail/>
     </Layout>
   );
 };
