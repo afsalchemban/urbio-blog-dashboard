@@ -1,8 +1,7 @@
 import { useRouter } from 'next/router';
 import { useGetPostQuery } from '../../store/api';
-import { Card, CardContent, Typography, CircularProgress, Box, Breadcrumbs, Link } from '@mui/material';
+import { Card, CardContent, Typography, CircularProgress, Box } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import NextLink from 'next/link';
 import PostDetailBreadcrumb from './PostDetailBreadcrumb';
 
 const PostDetail = () => {

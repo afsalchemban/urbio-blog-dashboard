@@ -1,8 +1,7 @@
 import React from "react";
-import Link from 'next/link';
 
 import { useGetPostsQuery } from '@/store/api';
-import { Grid, Typography, CircularProgress, Box, Button } from "@mui/material";
+import { Grid, Typography, CircularProgress } from "@mui/material";
 import PostCard from "@/components/post/PostCard";
 import PostListHeader from "./PostListHeader";
 
