@@ -2,7 +2,7 @@
 import Layout from '@/components/layout/Layout';
 import PostDetail from '@/features/posts/PostDetail';
 
-const Home = () => {
+const DetailPage = () => {
 
   return (
     <Layout>
@@ -11,4 +11,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default DetailPage;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Box } from "@mui/material";
-import PostFromButton from "./PostFromButton";
+import PostFormButton from "./PostFormButton";
 
 const PostListHeader = () => {
 
@@ -25,7 +25,7 @@ const PostListHeader = () => {
                     Discover insights from our latest blog posts.
                 </Typography>
             </Box>
-            <PostFromButton />
+            <PostFormButton />
         </Box>
     );
 };
