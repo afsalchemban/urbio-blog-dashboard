@@ -2,6 +2,7 @@ import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
   palette: {
+    mode: 'light',
     background: {
       default: 'hsl(0, 0%, 99%)', // Set background color to your desired light mode background
     },
