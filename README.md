@@ -104,4 +104,27 @@ We're using [MockAPI.io](https://mockapi.io) to simulate backend data. You can f
 https://67fa1570094de2fe6ea31be2.mockapi.io/posts
 ```
 
+---
+
+## 🔮 Testing
+
+```bash
+# Run all tests
+npm test
+
+# Or with yarn
+yarn test
+```
+
+Test files are colocated with their components and follow the `.test.tsx` naming convention:
+
+```bash
+├── components/
+│   └── layout/
+│       ├── Layout.tsx
+│       └── Layout.test.tsx
+│   └── post/
+│       ├── PostCard.tsx
+│       └── PostCard.test.tsx
+```
 
