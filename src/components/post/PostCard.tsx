@@ -19,10 +19,16 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
                 <Typography
                     variant="body2"
                     sx={{
-                        fontFamily: theme.typography.fontFamily,
                         fontStyle: 'italic',
+                        fontFamily: theme.typography.fontFamily,
                         color: theme.palette.text.secondary,
                         marginBottom: theme.spacing(1),
+                        display: '-webkit-box',
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: 'vertical',
+                        overflow: 'hidden',
+                        textOverflow: 'ellipsis',
+                        minHeight: '3rem', // Ensures space for 2 lines even if shorter
                     }}
                 >
                     {post.body.substring(0, 100)}...
@@ -45,7 +51,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
                                 padding: 0
                             }}
                         >
-              Read more &gt;&gt;
+                            Read more &gt;&gt;
                         </Button>
                     </Link>
                 </Box>
