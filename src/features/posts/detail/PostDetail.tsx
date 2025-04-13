@@ -29,13 +29,13 @@ const PostDetail = () => {
         }}
       >
         <CardContent>
-          <Typography variant="h3" sx={{ fontWeight: 'bold', marginBottom: 2 }}>
+          <Typography variant="h3" sx={{ fontWeight: 'bold', marginBottom: 2, color: 'text.primary' }}>
             {post.title}
           </Typography>
-          <Typography variant="subtitle1" sx={{ marginBottom: 2 }}>
+          <Typography variant="subtitle1" sx={{ marginBottom: 2, color: 'text.secondary' }}>
             Author: {post.author || 'Unknown'}
           </Typography>
-          <Typography variant="body1">{post.body}</Typography>
+          <Typography variant="body1" sx={{ color: 'text.secondary' }}>{post.body}</Typography>
         </CardContent>
       </Card>
     </Box>

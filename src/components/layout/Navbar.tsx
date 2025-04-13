@@ -30,7 +30,7 @@ const Navbar = () => {
               fontWeight={600}
               sx={{ color: theme.palette.text.primary }}
             >
-              Urbio Technologies
+              Blogger
             </Typography>
             <Box>
               <Button

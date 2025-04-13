@@ -15,8 +15,8 @@ const PostListHeader = () => {
             }}
         >
             <Box>
-                <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
-                    Blog
+                <Typography variant="h4" sx={{ fontWeight: 'bold', color: 'text.primary' }}>
+                    Latest Blogs
                 </Typography>
                 <Typography
                     variant="h6"
