@@ -68,11 +68,6 @@ Visit `http://localhost:3000` to view the app.
 - **Decision:** The "Add New Post" functionality was implemented using a dialog modal to provide a smoother and more seamless user experience without navigating away from the list view.I used RTK Query's caching and automatic refetching features to keep the post list updated without requiring manual refreshes, providing better UX and consistency.
 
 
-### Pagination & Total Count
-
-- **Challenge:** `mockapi.io` supports pagination but doesn’t always include the `X-Total-Count` header needed for showing total pages.
-- **Decision:** We used `transformResponse` in RTK Query to extract this header when available, and fallback to `.length` when it's not.
-
 ### Consistent Card Height & Body Display
 
 - **Challenge:** When displaying post cards in a grid, differing content lengths caused inconsistent card heights.
